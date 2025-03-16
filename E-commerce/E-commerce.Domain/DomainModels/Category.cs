@@ -1,6 +1,8 @@
-﻿namespace E_commerce.Domain.DomainModels
+﻿using E_commerce.Domain.Common;
+
+namespace E_commerce.Domain.DomainModels
 {
-    class Category
+    public class Category:BaseEntity
     {
         public string Name { get; set; }
         public string Description { get; set; }

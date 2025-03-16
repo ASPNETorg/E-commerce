@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.domain\\domainmodels\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|solutionrelative:e-commerce.domain\\domainmodels\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE2C6AE4-5686-4C6F-8550-0B1D7B816AA0}|API\\E-commerce.Api.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2C6AE4-5686-4C6F-8550-0B1D7B816AA0}|API\\E-commerce.Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.domain\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|solutionrelative:e-commerce.domain\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9ABCAAC-2DCA-40FE-B4EA-44D8A3B00AFE}|E-commerce.Infrastructure\\E-commerce.Infrastructure.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.infrastructure\\data\\projectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9ABCAAC-2DCA-40FE-B4EA-44D8A3B00AFE}|E-commerce.Infrastructure\\E-commerce.Infrastructure.csproj|solutionrelative:e-commerce.infrastructure\\data\\projectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,27 +39,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\Person.cs",
-              "RelativeDocumentMoniker": "E-commerce.Domain\\DomainModels\\Person.cs",
-              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\Person.cs",
-              "RelativeToolTip": "E-commerce.Domain\\DomainModels\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T08:54:11.828Z",
+              "WhenOpened": "2025-03-16T11:47:43.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\Common\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "E-commerce.Domain\\Common\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\Common\\BaseEntity.cs",
-              "RelativeToolTip": "E-commerce.Domain\\Common\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Title": "ProjectDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Infrastructure\\Data\\ProjectDbContext.cs",
+              "RelativeDocumentMoniker": "E-commerce.Infrastructure\\Data\\ProjectDbContext.cs",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Infrastructure\\Data\\ProjectDbContext.cs",
+              "RelativeToolTip": "E-commerce.Infrastructure\\Data\\ProjectDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T08:16:29.882Z",
+              "WhenOpened": "2025-03-16T11:40:40.836Z",
               "EditorCaption": ""
             }
           ]

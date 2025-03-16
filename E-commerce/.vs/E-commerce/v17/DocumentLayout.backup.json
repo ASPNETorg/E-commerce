@@ -7,6 +7,26 @@
       "RelativeMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|solutionrelative:e-commerce.domain\\domainmodels\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.domain\\domainmodels\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|solutionrelative:e-commerce.domain\\domainmodels\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.domain\\domainmodels\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|solutionrelative:e-commerce.domain\\domainmodels\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.domain\\domainmodels\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|solutionrelative:e-commerce.domain\\domainmodels\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.domain\\domainmodels\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|solutionrelative:e-commerce.domain\\domainmodels\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9ABCAAC-2DCA-40FE-B4EA-44D8A3B00AFE}|E-commerce.Infrastructure\\E-commerce.Infrastructure.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.infrastructure\\data\\projectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9ABCAAC-2DCA-40FE-B4EA-44D8A3B00AFE}|E-commerce.Infrastructure\\E-commerce.Infrastructure.csproj|solutionrelative:e-commerce.infrastructure\\data\\projectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.domain\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|solutionrelative:e-commerce.domain\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,28 +58,93 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\Product.cs",
+              "RelativeDocumentMoniker": "E-commerce.Domain\\DomainModels\\Product.cs",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\Product.cs",
+              "RelativeToolTip": "E-commerce.Domain\\DomainModels\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T11:47:11.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\Person.cs",
               "RelativeDocumentMoniker": "E-commerce.Domain\\DomainModels\\Person.cs",
               "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\Person.cs",
               "RelativeToolTip": "E-commerce.Domain\\DomainModels\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T08:54:11.828Z",
+              "WhenOpened": "2025-03-16T11:47:04.756Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "OrderHeader.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\OrderHeader.cs",
+              "RelativeDocumentMoniker": "E-commerce.Domain\\DomainModels\\OrderHeader.cs",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\OrderHeader.cs",
+              "RelativeToolTip": "E-commerce.Domain\\DomainModels\\OrderHeader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T11:46:57.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\Category.cs",
+              "RelativeDocumentMoniker": "E-commerce.Domain\\DomainModels\\Category.cs",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\Category.cs",
+              "RelativeToolTip": "E-commerce.Domain\\DomainModels\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T11:46:43.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\Common\\BaseEntity.cs",
               "RelativeDocumentMoniker": "E-commerce.Domain\\Common\\BaseEntity.cs",
               "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\Common\\BaseEntity.cs",
               "RelativeToolTip": "E-commerce.Domain\\Common\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T08:16:29.882Z",
+              "WhenOpened": "2025-03-16T11:45:50.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "E-commerce.Domain\\DomainModels\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\OrderDetail.cs",
+              "RelativeToolTip": "E-commerce.Domain\\DomainModels\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T11:44:40.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProjectDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Infrastructure\\Data\\ProjectDbContext.cs",
+              "RelativeDocumentMoniker": "E-commerce.Infrastructure\\Data\\ProjectDbContext.cs",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Infrastructure\\Data\\ProjectDbContext.cs",
+              "RelativeToolTip": "E-commerce.Infrastructure\\Data\\ProjectDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T11:40:40.836Z",
               "EditorCaption": ""
             }
           ]

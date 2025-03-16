@@ -1,6 +1,8 @@
-﻿namespace E_commerce.Domain.DomainModels
+﻿using E_commerce.Domain.Common;
+
+namespace E_commerce.Domain.DomainModels
 {
-    class OrderDetail
+    public class OrderDetail:BaseEntity
     {
         public Guid OrderHeaderId { get; set; }
         public Guid ProductId { get; set; }

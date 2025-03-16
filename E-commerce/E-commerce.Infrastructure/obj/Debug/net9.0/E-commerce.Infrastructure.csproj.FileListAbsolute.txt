@@ -1,0 +1,6 @@
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commerce.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commerce.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commerce.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commerce.Infrastructure.AssemblyInfo.cs
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commerce.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commerce.Infrastructure.sourcelink.json

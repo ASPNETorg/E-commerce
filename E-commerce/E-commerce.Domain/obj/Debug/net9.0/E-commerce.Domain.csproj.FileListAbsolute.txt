@@ -1,0 +1,15 @@
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Domain\bin\Debug\net9.0\E-commerce.Domain.deps.json
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Domain\bin\Debug\net9.0\E-commerce.Domain.runtimeconfig.json
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Domain\bin\Debug\net9.0\E-commerce.Domain.dll
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Domain\bin\Debug\net9.0\E-commerce.Domain.pdb
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Domain\obj\Debug\net9.0\E-commerce.Domain.csproj.AssemblyReference.cache
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Domain\obj\Debug\net9.0\E-commerce.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Domain\obj\Debug\net9.0\E-commerce.Domain.AssemblyInfoInputs.cache
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Domain\obj\Debug\net9.0\E-commerce.Domain.AssemblyInfo.cs
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Domain\obj\Debug\net9.0\E-commerce.Domain.csproj.CoreCompileInputs.cache
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Domain\obj\Debug\net9.0\E-commerce.Domain.sourcelink.json
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Domain\obj\Debug\net9.0\E-commerce.Domain.dll
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Domain\obj\Debug\net9.0\refint\E-commerce.Domain.dll
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Domain\obj\Debug\net9.0\E-commerce.Domain.pdb
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Domain\obj\Debug\net9.0\E-commerce.Domain.genruntimeconfig.cache
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Domain\obj\Debug\net9.0\ref\E-commerce.Domain.dll

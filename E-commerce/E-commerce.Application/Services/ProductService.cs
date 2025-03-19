@@ -12,11 +12,13 @@ namespace E_commerce.Application.Services
     public class ProductService : IProductService
     {
         private readonly IProductRepository _productRepository;
+        private readonly IPersonRepository _personRepository;
 
         #region [- Ctor -]
-        public ProductService(IProductRepository productRepository)
+        public ProductService(IProductRepository productRepository, IPersonRepository personRepository)
         {
             _productRepository = productRepository;
+             _personRepository = personRepository;
         }
         #endregion
 
@@ -79,18 +81,25 @@ namespace E_commerce.Application.Services
         #endregion
 
         #region [- Post() -]
-        public async Task<IResponse<PostProductServiceDto>> Post(PostProductServiceDto dto)
+        public async Task<IResponse<PostProductServiceDto>> Post(PostProductServiceDto dto, Guid id)
         {
             if (dto is null)
             {
                 return new Response<PostProductServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
+            }
+            var person = await _personRepository.SelectByIdAsync(id);
+            if(person == null || person.Role != "Seller")
+            {
+                throw new UnauthorizedAccessException("Only Sellers can add products.");
             }
             var postProduct = new Product()
             {
                 Id = new Guid(),
                 Name = dto.Name,
                 Description = dto.Description,
-                Price = dto.Price
+                Price = dto.Price,
+                Stock = dto.Stock,
+                SellerId = dto.SellerId
             };
             var insertResponse = await _productRepository.InsertAsync(postProduct);
 
@@ -105,18 +114,25 @@ namespace E_commerce.Application.Services
         #endregion
 
         #region [- Put() -]
-        public async Task<IResponse<PutProductServiceDto>> Put(PutProductServiceDto dto)
+        public async Task<IResponse<PutProductServiceDto>> Put(PutProductServiceDto dto, Guid id)
         {
             if (dto is null)
             {
                 return new Response<PutProductServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
+            }
+            var person = await _personRepository.SelectByIdAsync(id);
+            if(person == null || person.Role != "Seller")
+            {
+                throw new UnauthorizedAccessException("Only Sellers can update products.");
             }
             var putProduct = new Product()
             {
                 Id = dto.Id,
                 Name = dto.Name,
                 Description = dto.Description,
-                Price = dto.Price
+                Price = dto.Price,
+                Stock = dto.Stock,
+                SellerId = dto.SellerId,
             };
             var updateResponse = await _productRepository.UpdateAsync(putProduct);
 

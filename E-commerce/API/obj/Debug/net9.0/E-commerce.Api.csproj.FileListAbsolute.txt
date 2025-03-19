@@ -163,3 +163,9 @@ C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\API\obj\Debug\net9.
 C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\API\obj\Debug\net9.0\E-commerce.Api.pdb
 C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\API\obj\Debug\net9.0\E-commerce.Api.genruntimeconfig.cache
 C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\API\obj\Debug\net9.0\ref\E-commerce.Api.dll
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\API\bin\Debug\net9.0\E-commerce.Domain.dll
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\API\bin\Debug\net9.0\E-commerce.Infrastructure.dll
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\API\bin\Debug\net9.0\E-commerce.Domain.pdb
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\API\bin\Debug\net9.0\E-commerce.Infrastructure.pdb
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\API\bin\Debug\net9.0\E-commerce.Application.dll
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\API\bin\Debug\net9.0\E-commerce.Application.pdb

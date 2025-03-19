@@ -1,4 +1,6 @@
 using E_commerce.Infrastructure.Data;
+using E_commerce.Infrastructure.Models.Services.Contracts;
+using E_commerce.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,10 +9,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
 #region [- AddDbContext() -]
 var connectionString = builder.Configuration.GetConnectionString("Default");
 builder.Services.AddDbContext<ProjectDbContext>(options => options.UseSqlServer(connectionString));
 #endregion
+
+#region [- Models IOC -]
+builder.Services.AddScoped<IPersonRepository, PersonRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+#endregion
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

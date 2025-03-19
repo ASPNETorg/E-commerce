@@ -9,5 +9,6 @@ namespace E_commerce.Domain.DomainModels
         public decimal Price { get; set; }
         public Guid CategoryId { get; set; }
         public Guid SellerId { get; set; }
+        public ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

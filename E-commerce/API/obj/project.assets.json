@@ -1631,6 +1631,20 @@
           }
         }
       },
+      "E-commerce.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.3",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3"
+        },
+        "compile": {
+          "bin/placeholder/E-commerce.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/E-commerce.Application.dll": {}
+        }
+      },
       "E-commerce.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -4794,6 +4808,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "E-commerce.Application/1.0.0": {
+      "type": "project",
+      "path": "../E-commerce.Application/E-commerce.Application.csproj",
+      "msbuildProject": "../E-commerce.Application/E-commerce.Application.csproj"
+    },
     "E-commerce.Domain/1.0.0": {
       "type": "project",
       "path": "../E-commerce.Domain/E-commerce.Domain.csproj",
@@ -4807,6 +4826,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "E-commerce.Application >= 1.0.0",
       "E-commerce.Domain >= 1.0.0",
       "E-commerce.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.3",
@@ -4848,6 +4868,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\E-commerce.Application.csproj": {
+              "projectPath": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\E-commerce.Application.csproj"
+            },
             "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\E-commerce.Domain.csproj": {
               "projectPath": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\E-commerce.Domain.csproj"
             },

@@ -4,3 +4,17 @@ C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastr
 C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commerce.Infrastructure.AssemblyInfo.cs
 C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commerce.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commerce.Infrastructure.sourcelink.json
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\bin\Debug\net9.0\E-commerce.Infrastructure.deps.json
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\bin\Debug\net9.0\E-commerce.Infrastructure.runtimeconfig.json
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\bin\Debug\net9.0\E-commerce.Infrastructure.dll
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\bin\Debug\net9.0\E-commerce.Infrastructure.pdb
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\bin\Debug\net9.0\E-commerce.Domain.dll
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\bin\Debug\net9.0\E-commerce.Domain.pdb
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E_commerce.Infrastructure.Frameworks.ResponseMessages.resources
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commerce.Infrastructure.csproj.GenerateResource.cache
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commer.D1A2E730.Up2Date
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commerce.Infrastructure.dll
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\refint\E-commerce.Infrastructure.dll
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commerce.Infrastructure.pdb
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commerce.Infrastructure.genruntimeconfig.cache
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\ref\E-commerce.Infrastructure.dll

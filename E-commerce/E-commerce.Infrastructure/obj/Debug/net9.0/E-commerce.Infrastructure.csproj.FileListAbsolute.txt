@@ -18,3 +18,4 @@ C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastr
 C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commerce.Infrastructure.pdb
 C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E-commerce.Infrastructure.genruntimeconfig.cache
 C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\ref\E-commerce.Infrastructure.dll
+C:\Users\PC\Source\Repos\E-commecre_TinaKhorsandi\E-commerce\E-commerce.Infrastructure\obj\Debug\net9.0\E_commerce.Infrastructure.Frameworks.ResponseFrameworks.ResponseMessages.resources

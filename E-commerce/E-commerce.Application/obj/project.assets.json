@@ -1598,6 +1598,35 @@
             "rid": "win"
           }
         }
+      },
+      "E-commerce.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.3",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3"
+        },
+        "compile": {
+          "bin/placeholder/E-commerce.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/E-commerce.Domain.dll": {}
+        }
+      },
+      "E-commerce.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "E-commerce.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.3",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.3"
+        },
+        "compile": {
+          "bin/placeholder/E-commerce.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/E-commerce.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -4701,10 +4730,21 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "E-commerce.Domain/1.0.0": {
+      "type": "project",
+      "path": "../E-commerce.Domain/E-commerce.Domain.csproj",
+      "msbuildProject": "../E-commerce.Domain/E-commerce.Domain.csproj"
+    },
+    "E-commerce.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../E-commerce.Infrastructure/E-commerce.Infrastructure.csproj",
+      "msbuildProject": "../E-commerce.Infrastructure/E-commerce.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "E-commerce.Infrastructure >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.3",
@@ -4742,7 +4782,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Infrastructure\\E-commerce.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Infrastructure\\E-commerce.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -4801,5 +4845,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

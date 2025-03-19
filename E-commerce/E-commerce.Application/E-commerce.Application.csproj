@@ -20,4 +20,14 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\E-commerce.Infrastructure\E-commerce.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="E-commerce.Infrastructure">
+      <HintPath>..\E-commerce.Infrastructure\bin\Debug\net9.0\E-commerce.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

@@ -1,6 +1,8 @@
 using E_commerce.Infrastructure.Data;
 using E_commerce.Infrastructure.Models.Services.Contracts;
 using E_commerce.Infrastructure.Repositories;
+using E_commerce.Application.Contracts;
+using E_commerce.Application.Services;
 using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +23,9 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 #endregion
 
+#region [- ApplicationServices IOC -]
+builder.Services.AddScoped<IProductService, ProductService>();
+#endregion
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

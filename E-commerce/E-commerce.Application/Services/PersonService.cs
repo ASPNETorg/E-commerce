@@ -1,12 +1,12 @@
 ﻿
-using SPADesignPattern.ApplicationServices.Contracts;
-using SPADesignPattern.ApplicationServices.Dtos.PersonDtos;
-using SPADesignPattern.Frameworks;
-using SPADesignPattern.Frameworks.ResponseFrameworks;
-using SPADesignPattern.Frameworks.ResponseFrameworks.Contracts;
-using SPADesignPattern.Models.DomainModels;
-using SPADesignPattern.Models.Services.Contracts;
+using E_commerce.ApplicationServices.Dtos.PersonDtos;
+using E_commerce.Infrastructure.Frameworks;
+using E_commerce.Infrastructure.Frameworks.ResponseFrameworks;
+using E_commerce.Infrastructure.Frameworks.ResponseFrameworks.Contracts;
 using System.Net;
+using E_commerce.ApplicationServices.Contracts;
+using E_commerce.Infrastructure.Models.Services.Contracts;
+using E_commerce.Domain.DomainModels;
 
 namespace SPADesignPattern.ApplicationServices.Services
 {
@@ -24,7 +24,7 @@ namespace SPADesignPattern.ApplicationServices.Services
         #region [- GetAll() -]
         public async Task<IResponse<GetAllPersonServiceDto>> GetAll()
         {
-            var selectAllResponse = await _personRepository.SelectAll();
+            var selectAllResponse = await _personRepository.SelectAllAsync();
 
             if (selectAllResponse is null)
             {
@@ -43,9 +43,11 @@ namespace SPADesignPattern.ApplicationServices.Services
                 var personDto = new GetPersonServiceDto()
                 {
                     Id = (Guid)item.Id,
-                    FirstName = item.FirstName,
-                    LastName = item.LastName,
-                    Email = item.Email
+                    FirstName = item.FName,
+                    LastName = item.LName,
+                    Email = item.Email,
+                    PasswordHash = item.PasswordHash,
+                    Role = item.Role,
                 };
                 getAllPersonDto.GetPersonServiceDtos.Add(personDto);
             }
@@ -61,11 +63,13 @@ namespace SPADesignPattern.ApplicationServices.Services
             var person = new Person()
             {
                 Id = dto.Id,
-                FirstName = dto.FirstName,
-                LastName = dto.LastName,
-                Email = dto.Email
+                FName = dto.FirstName,
+                LName = dto.LastName,
+                Email = dto.Email,
+                PasswordHash = dto.PasswordHash,
+                Role = dto.Role,
             };
-            var selectResponse = await _personRepository.Select(person);
+            var selectResponse = await _personRepository.SelectByIdAsync(person);
 
             if (selectResponse is null)
             {
@@ -79,9 +83,11 @@ namespace SPADesignPattern.ApplicationServices.Services
             var getPersonServiceDto = new GetPersonServiceDto()
             {
                 Id = (Guid)selectResponse.Value.Id,
-                FirstName = selectResponse.Value.FirstName,
-                LastName = selectResponse.Value.LastName,
-                Email = selectResponse.Value.Email
+                FirstName = selectResponse.Value.FName,
+                LastName = selectResponse.Value.LName,
+                Email = selectResponse.Value.Email,
+                PasswordHash=selectResponse.Value.PasswordHash,
+                Role = selectResponse.Value.Role,
             };
             var response = new Response<GetPersonServiceDto>(true, HttpStatusCode.OK, ResponseMessages.SuccessfullOperation, getPersonServiceDto);
             return response;
@@ -98,11 +104,13 @@ namespace SPADesignPattern.ApplicationServices.Services
             var postPerson = new Person()
             {
                 Id = new Guid(),
-                FirstName = dto.FirstName,
-                LastName = dto.LastName,
-                Email = dto.Email
+                FName = dto.FirstName,
+                LName = dto.LastName,
+                Email = dto.Email,
+                PasswordHash = dto.PasswordHash,
+                Role = dto.Role,
             };
-            var insertResponse = await _personRepository.Insert(postPerson);
+            var insertResponse = await _personRepository.InsertAsync(postPerson);
 
             if (!insertResponse.IsSuccessful)
             {
@@ -124,11 +132,13 @@ namespace SPADesignPattern.ApplicationServices.Services
             var putPerson = new Person()
             {
                 Id = dto.Id,
-                FirstName = dto.FirstName,
-                LastName = dto.LastName,
-                Email = dto.Email
+                FName = dto.FirstName,
+                LName = dto.LastName,
+                Email = dto.Email,
+                PasswordHash = dto.PasswordHash,
+                Role = dto.Role,
             };
-            var updateResponse = await _personRepository.Update(putPerson);
+            var updateResponse = await _personRepository.UpdateAsync(putPerson);
 
             if (!updateResponse.IsSuccessful)
             {
@@ -148,7 +158,7 @@ namespace SPADesignPattern.ApplicationServices.Services
                 return new Response<DeletePersonServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
             }
 
-            var deleteResponse = await _personRepository.Delete(dto.Id);
+            var deleteResponse = await _personRepository.DeleteAsync(dto.Id);
 
             if (deleteResponse is null || !deleteResponse.IsSuccessful)
             {

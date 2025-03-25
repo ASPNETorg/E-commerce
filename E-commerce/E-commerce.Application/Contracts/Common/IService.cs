@@ -6,8 +6,8 @@ namespace E_commerce.Application.Contracts.Common
     {
         Task<IResponse<TGetAll>> GetAll();
         Task<IResponse<TGet>> Get(TGet dto);
-        Task<IResponse<TPost>> Post(TPost dto, Guid id);
-        Task<IResponse<TUpdate>> Put(TUpdate dto, Guid id);
+        Task<IResponse<TPost>> Post(TPost dto);
+        Task<IResponse<TUpdate>> Put(TUpdate dto);
         Task<IResponse<TDelete>> Delete(TDelete dto);
     }
 }

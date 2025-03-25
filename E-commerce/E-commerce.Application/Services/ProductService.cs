@@ -12,13 +12,11 @@ namespace E_commerce.Application.Services
     public class ProductService : IProductService
     {
         private readonly IProductRepository _productRepository;
-        private readonly IPersonRepository _personRepository;
 
         #region [- Ctor -]
-        public ProductService(IProductRepository productRepository, IPersonRepository personRepository)
+        public ProductService(IProductRepository productRepository)
         {
             _productRepository = productRepository;
-             _personRepository = personRepository;
         }
         #endregion
 
@@ -42,9 +40,35 @@ namespace E_commerce.Application.Services
         #endregion
 
         #region [- GetById() -]
-        public Task<IResponse<GetProductServiceDto>> Get(GetProductServiceDto dto)
+        public async Task<IResponse<GetProductServiceDto>> Get(GetProductServiceDto dto)
         {
-            throw new NotImplementedException();
+            var product = new Product()
+            {
+                Id = dto.Id,
+                Name = dto.Name,
+                Description = dto.Description,
+                Price = dto.Price,
+            };
+            var selectResponse = await _productRepository.SelectByIdAsync(product);
+
+            if (selectResponse is null)
+            {
+                return new Response<GetProductServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
+            }
+
+            if (!selectResponse.IsSuccessful)
+            {
+                return new Response<GetProductServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.Error, null);
+            }
+            var getProductServiceDto = new GetProductServiceDto()
+            {
+                Id = (Guid)selectResponse.Value.Id,
+                Name = selectResponse.Value.Name,
+                Description = selectResponse.Value.Description,
+                Price = selectResponse.Value.Price,
+            };
+            var response = new Response<GetProductServiceDto>(true, HttpStatusCode.OK, ResponseMessages.SuccessfullOperation, getProductServiceDto);
+            return response;
         }
         #endregion
 
@@ -81,17 +105,17 @@ namespace E_commerce.Application.Services
         #endregion
 
         #region [- Post() -]
-        public async Task<IResponse<PostProductServiceDto>> Post(PostProductServiceDto dto, Guid id)
+        public async Task<IResponse<PostProductServiceDto>> Post(PostProductServiceDto dto)
         {
             if (dto is null)
             {
                 return new Response<PostProductServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
             }
-            var person = await _personRepository.SelectByIdAsync(id);
-            if(person == null || person.Role != "Seller")
-            {
-                throw new UnauthorizedAccessException("Only Sellers can add products.");
-            }
+            //var person = await _personRepository.SelectByIdAsync(id);
+            //if (person == null || person.Role != "Seller")
+            //{
+            //    throw new UnauthorizedAccessException("Only Sellers can add products.");
+            //}
             var postProduct = new Product()
             {
                 Id = new Guid(),
@@ -114,17 +138,17 @@ namespace E_commerce.Application.Services
         #endregion
 
         #region [- Put() -]
-        public async Task<IResponse<PutProductServiceDto>> Put(PutProductServiceDto dto, Guid id)
+        public async Task<IResponse<PutProductServiceDto>> Put(PutProductServiceDto dto)
         {
             if (dto is null)
             {
                 return new Response<PutProductServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
             }
-            var person = await _personRepository.SelectByIdAsync(id);
-            if(person == null || person.Role != "Seller")
-            {
-                throw new UnauthorizedAccessException("Only Sellers can update products.");
-            }
+            //var person = await _personRepository.SelectByIdAsync(id);
+            //if(person == null || person.Role != "Seller")
+            //{
+            //    throw new UnauthorizedAccessException("Only Sellers can update products.");
+            //}
             var putProduct = new Product()
             {
                 Id = dto.Id,

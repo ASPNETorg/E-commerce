@@ -4,6 +4,6 @@ using E_commerce.ApplicationServices.Dtos.PersonDtos;
 namespace E_commerce.ApplicationServices.Contracts;
 
 public interface IPersonService : 
-    IService<PostPersonServiceDto, GetOrderDetailServiceServiceDto, GetAllPersonServiceDto, PutPersonServiceDto, DeletePersonServiceDto>
+    IService<PostPersonServiceDto, GetPersonServiceDto, GetAllPersonServiceDto, PutPersonServiceDto, DeletePersonServiceDto>
 {
 }

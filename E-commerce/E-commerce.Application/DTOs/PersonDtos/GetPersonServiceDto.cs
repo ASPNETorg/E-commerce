@@ -1,6 +1,6 @@
 ﻿namespace E_commerce.ApplicationServices.Dtos.PersonDtos;
 
-public class GetOrderDetailServiceServiceDto
+public class GetPersonServiceDto
 {
     public Guid Id { get; set; }
 

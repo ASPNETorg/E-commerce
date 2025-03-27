@@ -2,8 +2,8 @@ using E_commerce.Infrastructure.Data;
 using E_commerce.Infrastructure.Models.Services.Contracts;
 using E_commerce.Infrastructure.Repositories;
 using E_commerce.Application.Contracts;
-using E_commerce.Application.Services;
 using Microsoft.EntityFrameworkCore;
+using E_commerce.Application.Services.ProductService;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

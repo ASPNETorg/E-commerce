@@ -9,6 +9,6 @@ namespace E_commerce.Application.DTOs.OrderDetailDtos
 {
     public class GetAllOrderDetailServiceDto
     {
-        public List<GetOrderDetailServiceServiceDto> GetOrderDetailServiceDtoServiceDtos { get; set; }
+        public List<GetOrderDetailServiceDto> GetOrderDetailServiceDtos { get; set; }
     }
 }

@@ -36,11 +36,11 @@ namespace SPADesignPattern.ApplicationServices.Services
                 return new Response<GetAllPersonServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.Error, null);
             }
 
-            var getAllPersonDto = new GetAllPersonServiceDto() { GetPersonServiceDtos = new List<GetPersonServiceDto>() };
+            var getAllPersonDto = new GetAllPersonServiceDto() { GetPersonServiceDtos = new List<GetOrderDetailServiceServiceDto>() };
 
             foreach (var item in selectAllResponse.Value)
             {
-                var personDto = new GetPersonServiceDto()
+                var personDto = new GetOrderDetailServiceServiceDto()
                 {
                     Id = (Guid)item.Id,
                     FirstName = item.FName,
@@ -58,7 +58,7 @@ namespace SPADesignPattern.ApplicationServices.Services
         #endregion
 
         #region [- Get() -]
-        public async Task<IResponse<GetPersonServiceDto>> Get(GetPersonServiceDto dto)
+        public async Task<IResponse<GetOrderDetailServiceServiceDto>> Get(GetOrderDetailServiceServiceDto dto)
         {
             var person = new Person()
             {
@@ -73,14 +73,14 @@ namespace SPADesignPattern.ApplicationServices.Services
 
             if (selectResponse is null)
             {
-                return new Response<GetPersonServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
+                return new Response<GetOrderDetailServiceServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
             }
 
             if (!selectResponse.IsSuccessful)
             {
-                return new Response<GetPersonServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.Error, null);
+                return new Response<GetOrderDetailServiceServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.Error, null);
             }
-            var getPersonServiceDto = new GetPersonServiceDto()
+            var getPersonServiceDto = new GetOrderDetailServiceServiceDto()
             {
                 Id = (Guid)selectResponse.Value.Id,
                 FirstName = selectResponse.Value.FName,
@@ -89,7 +89,7 @@ namespace SPADesignPattern.ApplicationServices.Services
                 PasswordHash=selectResponse.Value.PasswordHash,
                 Role = selectResponse.Value.Role,
             };
-            var response = new Response<GetPersonServiceDto>(true, HttpStatusCode.OK, ResponseMessages.SuccessfullOperation, getPersonServiceDto);
+            var response = new Response<GetOrderDetailServiceServiceDto>(true, HttpStatusCode.OK, ResponseMessages.SuccessfullOperation, getPersonServiceDto);
             return response;
         }
         #endregion

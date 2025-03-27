@@ -2,5 +2,5 @@
 
 public class GetAllPersonServiceDto
 {
-    public List<GetPersonServiceDto> GetPersonServiceDtos { get; set; }
+    public List<GetOrderDetailServiceServiceDto> GetPersonServiceDtos { get; set; }
 }

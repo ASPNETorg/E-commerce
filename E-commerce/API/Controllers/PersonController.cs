@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 namespace API.Controllers
 {
     [ApiController]
-    [Route("api/[Controller]")]
+    [Route("api/[controllers]")]
     public class PersonController : Controller
     {
         private readonly IPersonService _personService;

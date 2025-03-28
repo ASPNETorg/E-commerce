@@ -96,7 +96,7 @@ namespace E_commerce.Application.Services.PersonService
         #region [- GetByEmail() -]
         public async Task<bool> IsEmailDublicated(string email)
         {
-            var existingPerson = await _personRepository.GetByEmailAsync(email);
+            var existingPerson = await _personRepository.SelectByEmailAsync(email);
             return existingPerson != null;
         } 
         #endregion

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.application\\services\\orderservice\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|solutionrelative:e-commerce.application\\services\\orderservice\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE2C6AE4-5686-4C6F-8550-0B1D7B816AA0}|API\\E-commerce.Api.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\api\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2C6AE4-5686-4C6F-8550-0B1D7B816AA0}|API\\E-commerce.Api.csproj|solutionrelative:api\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.application\\services\\personservice\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|solutionrelative:e-commerce.application\\services\\personservice\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE2C6AE4-5686-4C6F-8550-0B1D7B816AA0}|API\\E-commerce.Api.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE2C6AE4-5686-4C6F-8550-0B1D7B816AA0}|API\\E-commerce.Api.csproj|solutionrelative:api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,27 +43,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PersonService.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\Services\\PersonService\\PersonService.cs",
-              "RelativeDocumentMoniker": "E-commerce.Application\\Services\\PersonService\\PersonService.cs",
-              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\Services\\PersonService\\PersonService.cs",
-              "RelativeToolTip": "E-commerce.Application\\Services\\PersonService\\PersonService.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAQwHYAAAAcAAAAAAAAAA==",
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\API\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\API\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "API\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T08:26:15.554Z",
+              "WhenOpened": "2025-03-28T11:45:34.274Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\Services\\OrderService\\OrderService.cs",
-              "RelativeDocumentMoniker": "E-commerce.Application\\Services\\OrderService\\OrderService.cs",
-              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\Services\\OrderService\\OrderService.cs*",
-              "RelativeToolTip": "E-commerce.Application\\Services\\OrderService\\OrderService.cs*",
-              "ViewState": "AgIAACIAAAAAAAAAAAAqwH4AAAA9AAAAAAAAAA==",
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\API\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\PersonController.cs",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\API\\Controllers\\PersonController.cs*",
+              "RelativeToolTip": "API\\Controllers\\PersonController.cs*",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T07:53:03.018Z",
+              "WhenOpened": "2025-03-28T11:45:12.84Z",
               "EditorCaption": ""
             }
           ]

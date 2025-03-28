@@ -5,6 +5,6 @@ namespace E_commerce.Infrastructure.Models.Services.Contracts
 {
     public interface IPersonRepository: IRepository<Person, IEnumerable<Person>>
     {
-       
+       Task<Person> SelectByEmailAsync(string email);
     }
 }

@@ -16,21 +16,21 @@ namespace E_commerce.Infrastructure.Repositories
         public PersonRepository(ProjectDbContext dbContext)
         {
             _dbContext = dbContext;
-        } 
+        }
         #endregion
 
         #region [- Insert() -]
         public async Task<IResponse<Person>> InsertAsync(Person model)
         {
-             try
+            try
             {
                 if (model is null)
                 {
-                    return new Response<Person>(false, HttpStatusCode.UnprocessableContent,ResponseMessages.NullInput, null);
+                    return new Response<Person>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
                 }
                 await _dbContext.AddAsync(model);
                 await _dbContext.SaveChangesAsync();
-                var response = new Response<Person>(true, HttpStatusCode.OK,ResponseMessages.SuccessfullOperation, model);
+                var response = new Response<Person>(true, HttpStatusCode.OK, ResponseMessages.SuccessfullOperation, model);
                 return response;
             }
             catch (Exception)
@@ -46,9 +46,9 @@ namespace E_commerce.Infrastructure.Repositories
             try
             {
                 var person = await _dbContext.People.AsNoTracking().ToListAsync();
-                return person is null ? 
-                    new Response<IEnumerable<Person>>(false, HttpStatusCode.UnprocessableContent,ResponseMessages.NullInput, null) :
-                    new Response<IEnumerable<Person>>(true, HttpStatusCode.OK,ResponseMessages.SuccessfullOperation,person);
+                return person is null ?
+                    new Response<IEnumerable<Person>>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null) :
+                    new Response<IEnumerable<Person>>(true, HttpStatusCode.OK, ResponseMessages.SuccessfullOperation, person);
             }
             catch (Exception)
             {
@@ -73,13 +73,20 @@ namespace E_commerce.Infrastructure.Repositories
                     responseValue = await _dbContext.People.FindAsync(model.Id);
                 }
                 return responseValue is null ?
-                     new Response<Person>(false, HttpStatusCode.UnprocessableContent,ResponseMessages.NullInput, null) :
+                     new Response<Person>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null) :
                      new Response<Person>(true, HttpStatusCode.OK, ResponseMessages.SuccessfullOperation, responseValue);
             }
             catch (Exception)
             {
                 throw;
             }
+        }
+        #endregion
+
+        #region [- SelectByEmail() -]
+        public async Task<Person> SelectByEmailAsync(string email)
+        {
+            return await _dbContext.People.FirstOrDefaultAsync(p => p.Email == email);
         } 
         #endregion
 
@@ -107,10 +114,11 @@ namespace E_commerce.Infrastructure.Repositories
 
         #region [- Delete() -]
         public async Task<IResponse<Person>> DeleteAsync(Guid id)
-        {try
+        {
+            try
             {
                 var DeleteRecord = await _dbContext.People.FindAsync(id);
-                if (DeleteRecord == null) 
+                if (DeleteRecord == null)
                 {
                     return new Response<Person>(false, HttpStatusCode.NotFound, "Person not found", null);
 
@@ -129,6 +137,8 @@ namespace E_commerce.Infrastructure.Repositories
                 return new Response<Person>(false, HttpStatusCode.InternalServerError, "Message", null);
             }
         }
+
+
         #endregion
     }
 }

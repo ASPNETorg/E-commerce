@@ -6,7 +6,6 @@ using E_commerce.Infrastructure.Frameworks;
 using E_commerce.Infrastructure.Frameworks.ResponseFrameworks.Contracts;
 using E_commerce.Infrastructure.Models.Services.Contracts;
 using System.Net;
-using System;
 using E_commerce.Infrastructure.Frameworks.ResponseFrameworks;
 
 namespace E_commerce.Application.Services.OrderService
@@ -16,17 +15,30 @@ namespace E_commerce.Application.Services.OrderService
         private readonly IOrderRepository _orderRepository;
         private readonly IPersonRepository _personRepository;
 
+        #region [- Ctor() -]
         public OrderService(IOrderRepository orderRepository, IPersonRepository personRepository)
         {
             _orderRepository = orderRepository;
             _personRepository = personRepository;
         }
+        #endregion
 
         #region [- Delete() -]
-        public Task<IResponse<DTOs.OrderHeaderDtos.DeleteOrderHeaderServiceDto>> Delete(DTOs.OrderHeaderDtos.DeleteOrderHeaderServiceDto dto)
+        public async Task<IResponse<DeleteOrderHeaderServiceDto>> Delete(DeleteOrderHeaderServiceDto dto)
         {
-            throw new NotImplementedException();
-        } 
+            if (dto is null)
+            {
+                return new Response<DeleteOrderHeaderServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
+            }
+            var deleteResponse = await _orderRepository.DeleteAsync(dto.Id);
+
+            if (deleteResponse is null || !deleteResponse.IsSuccessful)
+            {
+                return new Response<DeleteOrderHeaderServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.Error, dto);
+            }
+            var response = new Response<DeleteOrderHeaderServiceDto>(true, HttpStatusCode.OK, ResponseMessages.SuccessfullOperation, dto);
+            return response;
+        }
         #endregion
 
         #region [- Get() -]
@@ -97,17 +109,70 @@ namespace E_commerce.Application.Services.OrderService
         #endregion
 
         #region [- Post() -]
-        public Task<IResponse<PostOrderHeaderServiceDto>> Post(PostOrderHeaderServiceDto dto)
+        public async Task<IResponse<PostOrderHeaderServiceDto>> Post(PostOrderHeaderServiceDto dto)
         {
-            throw new NotImplementedException();
+            if (dto is null)
+            {
+                return new Response<PostOrderHeaderServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
+            }
+            var order = new OrderHeader()
+            {
+                Id = Guid.NewGuid(),
+                BuyerId = Guid.NewGuid(),
+                TotalAmount = dto.TotalAmount,
+                OrderDate = dto.OrderDate,
+                OrderDetails = dto.postOrderDetailServiceDtos.Select(od => new OrderDetail
+                {
+                    Id = Guid.NewGuid(),
+                    ProductId = od.ProductId,
+                    Quantity = od.Quantity,
+                    Price = od.Price,
+                }).ToList(),
+            };
+            var insertResponse = await _orderRepository.InsertAsync(order);
+
+            if (!insertResponse.IsSuccessful)
+            {
+                return new Response<PostOrderHeaderServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.Error, dto);
+            }
+
+            var response = new Response<PostOrderHeaderServiceDto>(true, HttpStatusCode.OK, ResponseMessages.SuccessfullOperation, dto);
+            return response;
         }
         #endregion
 
         #region [- Put() -]
-        public Task<IResponse<DTOs.OrderHeaderDtos.PutOrderHeaderServiceDto>> Put(DTOs.OrderHeaderDtos.PutOrderHeaderServiceDto dto)
+        public async Task<IResponse<PutOrderHeaderServiceDto>> Put(PutOrderHeaderServiceDto dto)
         {
-            throw new NotImplementedException();
-        } 
+            if (dto is null)
+            {
+                return new Response<PutOrderHeaderServiceDto>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
+            }
+            // Retrieve the existing order by ID
+            var existingOrderResponse = await _orderRepository.SelectOrderByUserAsync(dto.Id);
+            if (existingOrderResponse == null || existingOrderResponse.Value == null)
+            {
+                throw new KeyNotFoundException("Order not found");
+            }
+            var existingOrder = existingOrderResponse.Value;
+           
+            existingOrder.BuyerId = dto.BuyerId;
+            existingOrder.TotalAmount = dto.TotalAmount; 
+                                                         
+            if (dto.postOrderDetailServiceDtos != null && dto.postOrderDetailServiceDtos.Any())
+            {
+                existingOrder.OrderDetails = dto.postOrderDetailServiceDtos.Select(od => new OrderDetail
+                {
+                    Id = Guid.NewGuid(),
+                    ProductId = od.ProductId,
+                    Quantity = od.Quantity,
+                    Price = od.Price
+                }).ToList();
+            }
+            await _orderRepository.UpdateAsync(existingOrder);
+            
+            return new Response<PutOrderHeaderServiceDto>(true, HttpStatusCode.OK, ResponseMessages.SuccessfullOperation, dto);
+        }
         #endregion
 
     }

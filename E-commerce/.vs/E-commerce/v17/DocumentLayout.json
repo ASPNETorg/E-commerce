@@ -7,40 +7,8 @@
       "RelativeMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|solutionrelative:e-commerce.application\\services\\orderservice\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.application\\contracts\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|solutionrelative:e-commerce.application\\contracts\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9ABCAAC-2DCA-40FE-B4EA-44D8A3B00AFE}|E-commerce.Infrastructure\\E-commerce.Infrastructure.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.infrastructure\\contracts\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9ABCAAC-2DCA-40FE-B4EA-44D8A3B00AFE}|E-commerce.Infrastructure\\E-commerce.Infrastructure.csproj|solutionrelative:e-commerce.infrastructure\\contracts\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.application\\dtos\\orderheaderdtos\\getallorderheaderservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|solutionrelative:e-commerce.application\\dtos\\orderheaderdtos\\getallorderheaderservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.application\\dtos\\orderheaderdtos\\putorderheaderservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|solutionrelative:e-commerce.application\\dtos\\orderheaderdtos\\putorderheaderservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.application\\dtos\\orderheaderdtos\\postorderheaderservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|solutionrelative:e-commerce.application\\dtos\\orderheaderdtos\\postorderheaderservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.application\\dtos\\orderheaderdtos\\deleteorderheaderservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|solutionrelative:e-commerce.application\\dtos\\orderheaderdtos\\deleteorderheaderservicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.domain\\domainmodels\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|solutionrelative:e-commerce.domain\\domainmodels\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.domain\\domainmodels\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49C0283B-9CD7-4DDF-8FC2-641A90F8CD1F}|E-commerce.Domain\\E-commerce.Domain.csproj|solutionrelative:e-commerce.domain\\domainmodels\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D9ABCAAC-2DCA-40FE-B4EA-44D8A3B00AFE}|E-commerce.Infrastructure\\E-commerce.Infrastructure.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9ABCAAC-2DCA-40FE-B4EA-44D8A3B00AFE}|E-commerce.Infrastructure\\E-commerce.Infrastructure.csproj|solutionrelative:e-commerce.infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|c:\\users\\pc\\source\\repos\\e-commecre_tinakhorsandi\\e-commerce\\e-commerce.application\\services\\personservice\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2725741C-7051-42FC-9FA1-C67A20B0FE53}|E-commerce.Application\\E-commerce.Application.csproj|solutionrelative:e-commerce.application\\services\\personservice\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,99 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Infrastructure\\Contracts\\IRepository.cs",
-              "RelativeDocumentMoniker": "E-commerce.Infrastructure\\Contracts\\IRepository.cs",
-              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Infrastructure\\Contracts\\IRepository.cs",
-              "RelativeToolTip": "E-commerce.Infrastructure\\Contracts\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T21:04:23.459Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PutOrderHeaderServiceDto.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\DTOs\\OrderHeaderDtos\\PutOrderHeaderServiceDto.cs",
-              "RelativeDocumentMoniker": "E-commerce.Application\\DTOs\\OrderHeaderDtos\\PutOrderHeaderServiceDto.cs",
-              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\DTOs\\OrderHeaderDtos\\PutOrderHeaderServiceDto.cs",
-              "RelativeToolTip": "E-commerce.Application\\DTOs\\OrderHeaderDtos\\PutOrderHeaderServiceDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T20:49:16.598Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IOrderService.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\Contracts\\IOrderService.cs",
-              "RelativeDocumentMoniker": "E-commerce.Application\\Contracts\\IOrderService.cs",
-              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\Contracts\\IOrderService.cs",
-              "RelativeToolTip": "E-commerce.Application\\Contracts\\IOrderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T20:32:49.98Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PostOrderHeaderServiceDto.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\DTOs\\OrderHeaderDtos\\PostOrderHeaderServiceDto.cs",
-              "RelativeDocumentMoniker": "E-commerce.Application\\DTOs\\OrderHeaderDtos\\PostOrderHeaderServiceDto.cs",
-              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\DTOs\\OrderHeaderDtos\\PostOrderHeaderServiceDto.cs",
-              "RelativeToolTip": "E-commerce.Application\\DTOs\\OrderHeaderDtos\\PostOrderHeaderServiceDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T20:49:14.092Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetAllOrderHeaderServiceDto.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\DTOs\\OrderHeaderDtos\\GetAllOrderHeaderServiceDto.cs",
-              "RelativeDocumentMoniker": "E-commerce.Application\\DTOs\\OrderHeaderDtos\\GetAllOrderHeaderServiceDto.cs",
-              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\DTOs\\OrderHeaderDtos\\GetAllOrderHeaderServiceDto.cs",
-              "RelativeToolTip": "E-commerce.Application\\DTOs\\OrderHeaderDtos\\GetAllOrderHeaderServiceDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T20:49:04.934Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\Services\\OrderService\\OrderService.cs",
-              "RelativeDocumentMoniker": "E-commerce.Application\\Services\\OrderService\\OrderService.cs",
-              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\Services\\OrderService\\OrderService.cs",
-              "RelativeToolTip": "E-commerce.Application\\Services\\OrderService\\OrderService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwG8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T20:13:39.932Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DeleteOrderHeaderServiceDto.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\DTOs\\OrderHeaderDtos\\DeleteOrderHeaderServiceDto.cs",
-              "RelativeDocumentMoniker": "E-commerce.Application\\DTOs\\OrderHeaderDtos\\DeleteOrderHeaderServiceDto.cs",
-              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\DTOs\\OrderHeaderDtos\\DeleteOrderHeaderServiceDto.cs",
-              "RelativeToolTip": "E-commerce.Application\\DTOs\\OrderHeaderDtos\\DeleteOrderHeaderServiceDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T20:48:58.445Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -165,41 +42,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OrderDetail.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\OrderDetail.cs",
-              "RelativeDocumentMoniker": "E-commerce.Domain\\DomainModels\\OrderDetail.cs",
-              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\OrderDetail.cs",
-              "RelativeToolTip": "E-commerce.Domain\\DomainModels\\OrderDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "PersonService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\Services\\PersonService\\PersonService.cs",
+              "RelativeDocumentMoniker": "E-commerce.Application\\Services\\PersonService\\PersonService.cs",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\Services\\PersonService\\PersonService.cs",
+              "RelativeToolTip": "E-commerce.Application\\Services\\PersonService\\PersonService.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAQwHYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T20:27:54.719Z",
+              "WhenOpened": "2025-03-28T08:26:15.554Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "OrderRepository.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Infrastructure\\Repositories\\OrderRepository.cs",
-              "RelativeDocumentMoniker": "E-commerce.Infrastructure\\Repositories\\OrderRepository.cs",
-              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Infrastructure\\Repositories\\OrderRepository.cs",
-              "RelativeToolTip": "E-commerce.Infrastructure\\Repositories\\OrderRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\Services\\OrderService\\OrderService.cs",
+              "RelativeDocumentMoniker": "E-commerce.Application\\Services\\OrderService\\OrderService.cs",
+              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Application\\Services\\OrderService\\OrderService.cs*",
+              "RelativeToolTip": "E-commerce.Application\\Services\\OrderService\\OrderService.cs*",
+              "ViewState": "AgIAACIAAAAAAAAAAAAqwH4AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T20:23:53.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "OrderHeader.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\OrderHeader.cs",
-              "RelativeDocumentMoniker": "E-commerce.Domain\\DomainModels\\OrderHeader.cs",
-              "ToolTip": "C:\\Users\\PC\\Source\\Repos\\E-commecre_TinaKhorsandi\\E-commerce\\E-commerce.Domain\\DomainModels\\OrderHeader.cs",
-              "RelativeToolTip": "E-commerce.Domain\\DomainModels\\OrderHeader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T20:23:22.811Z",
+              "WhenOpened": "2025-03-28T07:53:03.018Z",
               "EditorCaption": ""
             }
           ]

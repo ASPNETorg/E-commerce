@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace E_commerce.Application.Contracts
 {
     public interface IOrderService : IService<PostOrderHeaderServiceDto, GetOrderHeaderServiceDto, GetAllOrderHeaderServiceDto, PutOrderHeaderServiceDto, DeleteOrderHeaderServiceDto>
-    {
-        
+    { 
+
     }
 }

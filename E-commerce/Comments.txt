@@ -1,0 +1,2 @@
+1- guard for person (login for seller and sign up for buyer)
+2- adding view(js)

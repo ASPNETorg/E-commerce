@@ -1,6 +1,8 @@
 ﻿using E_commerce.Application.Contracts;
+using E_commerce.ApplicationServices.Contracts;
 using E_commerce.ApplicationServices.Dtos.PersonDtos;
 using E_commerce.ApplicationServices.Dtos.ProductDtos;
+using E_commerce.Domain.DomainModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
@@ -10,11 +12,13 @@ namespace Api.Controllers
     public class ProductController : Controller
     {
         private readonly IProductService _productService;
+        private readonly IPersonService _personService;
 
         #region [- Ctor() -]
-        public ProductController(IProductService productService)
+        public ProductController(IProductService productService , IPersonService personService)
         {
             _productService = productService;
+            _personService = personService;
         }
         #endregion
 
@@ -49,6 +53,12 @@ namespace Api.Controllers
         public async Task<IActionResult> Post([FromBody] PostProductServiceDto dto)
         {
             Guard_ProductService();
+            //var currentUserEmail = User.Identity.Name;
+            //var currentUser = await _personService.Get();
+            if(User.IsInRole("Buyer"))
+            {
+                return Forbid();
+            }
             var postDto = new GetProductServiceDto() {Id = dto.CategoryId };
             var getResponse = await _productService.Get(postDto);
 
@@ -73,7 +83,10 @@ namespace Api.Controllers
         public async Task<IActionResult> Put([FromBody] PutProductServiceDto dto)
         {
             Guard_ProductService();
-
+            if(User.IsInRole("Buyer"))
+            {
+                return Forbid();
+            }
             if (ModelState.IsValid)
             {
                 var existingProduct = await _productService.Get(new GetProductServiceDto {Id = dto.CategoryId});
@@ -96,6 +109,10 @@ namespace Api.Controllers
         public async Task<IActionResult> Delete([FromBody] DeleteProductServiceDto dto)
         {
             Guard_ProductService();
+            if(User.IsInRole("Buyer"))
+            {
+                return Forbid();
+            }
             var deleteResponse = await _productService.Delete(dto);
             return deleteResponse.IsSuccessful ? Ok() : BadRequest();
         }

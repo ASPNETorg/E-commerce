@@ -10,7 +10,6 @@ namespace E_commerce.Infrastructure.Data
         }
         public DbSet<Product> Products { get; set; }
         public DbSet<Person> People { get; set; }
-        public DbSet<Category> Categories { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<OrderHeader> OrderHeaders { get; set; }
     }

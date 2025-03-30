@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Api.Controllers
 {
     [ApiController]
-    [Route("api/[controllers]")]
+    [Route("api/[controller]")]
     public class OrderController : Controller
     {
         private readonly IOrderService _orderService;

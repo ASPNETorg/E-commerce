@@ -99,8 +99,7 @@ namespace E_commerce.Infrastructure.Repositories
                 {
                     return new Response<Person>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
                 }
-                //_projectDbContext.Update(model);
-                _dbContext.Entry(model).State = EntityState.Modified;
+                _dbContext.Update(model);
                 await _dbContext.SaveChangesAsync();
                 var response = new Response<Person>(true, HttpStatusCode.OK, ResponseMessages.SuccessfullOperation, model);
                 return response;

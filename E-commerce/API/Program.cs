@@ -4,6 +4,9 @@ using E_commerce.Infrastructure.Repositories;
 using E_commerce.Application.Contracts;
 using Microsoft.EntityFrameworkCore;
 using E_commerce.Application.Services.ProductService;
+using E_commerce.Application.Services.PersonService;
+using E_commerce.ApplicationServices.Contracts;
+using E_commerce.Application.Services.OrderService;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -25,6 +28,8 @@ builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 
 #region [- ApplicationServices IOC -]
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IPersonService, PersonService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 #endregion
 var app = builder.Build();
 

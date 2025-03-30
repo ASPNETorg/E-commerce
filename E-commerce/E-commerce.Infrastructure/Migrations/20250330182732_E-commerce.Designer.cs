@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_commerce.Infrastructure.Migrations
 {
     [DbContext(typeof(ProjectDbContext))]
-    [Migration("20250317170259_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250330182732_E-commerce")]
+    partial class Ecommerce
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,25 +24,6 @@ namespace E_commerce.Infrastructure.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("E_commerce.Domain.DomainModels.Category", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Categories");
-                });
 
             modelBuilder.Entity("E_commerce.Domain.DomainModels.OrderDetail", b =>
                 {
@@ -137,9 +118,6 @@ namespace E_commerce.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("CategoryId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -157,9 +135,10 @@ namespace E_commerce.Infrastructure.Migrations
                     b.Property<Guid>("SellerId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("Id");
+                    b.Property<decimal>("Stock")
+                        .HasColumnType("decimal(18,2)");
 
-                    b.HasIndex("CategoryId");
+                    b.HasKey("Id");
 
                     b.HasIndex("PersonId");
 
@@ -190,20 +169,9 @@ namespace E_commerce.Infrastructure.Migrations
 
             modelBuilder.Entity("E_commerce.Domain.DomainModels.Product", b =>
                 {
-                    b.HasOne("E_commerce.Domain.DomainModels.Category", null)
-                        .WithMany("Products")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("E_commerce.Domain.DomainModels.Person", null)
                         .WithMany("Products")
                         .HasForeignKey("PersonId");
-                });
-
-            modelBuilder.Entity("E_commerce.Domain.DomainModels.Category", b =>
-                {
-                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("E_commerce.Domain.DomainModels.OrderHeader", b =>

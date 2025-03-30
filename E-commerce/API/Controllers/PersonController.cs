@@ -1,20 +1,22 @@
 ﻿using E_commerce.ApplicationServices.Contracts;
 using E_commerce.ApplicationServices.Dtos.PersonDtos;
+using E_commerce.Infrastructure.Models.Services.Contracts;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 
 namespace API.Controllers
 {
     [ApiController]
-    [Route("api/[controllers]")]
+    [Route("api/[controller]")]
     public class PersonController : Controller
     {
         private readonly IPersonService _personService;
+        private readonly IPersonRepository _personRepository;
 
         #region [- Ctor -]
-        public PersonController(IPersonService personService)
+        public PersonController(IPersonService personService, IPersonRepository personRepository)
         {
             _personService = personService;
+            _personRepository = personRepository;
         }
         #endregion
 
@@ -30,7 +32,7 @@ namespace API.Controllers
                 return Json("NotFound");
             }
             return Json(response);
-        } 
+        }
         #endregion
 
         #region [- GetAll() -]
@@ -49,6 +51,22 @@ namespace API.Controllers
         public async Task<IActionResult> Post([FromBody] PostPersonServiceDto dto)
         {
             Guard_PersonService();
+            var existingUser = await _personRepository.SelectByEmailAsync(dto.Email);
+
+            if (dto.Role == "Buyer")
+            {
+                if (existingUser != null)
+                {
+                    return Conflict("A buyer with this email already exists.");
+                }
+            }
+            else if (dto.Role == "Seller")
+            {
+                if (existingUser == null)
+                {
+                    return NotFound("Seller not found. Please sign up first.");
+                }
+            }
             var postDto = new GetPersonServiceDto() { Email = dto.Email };
             var getResponse = await _personService.Get(postDto);
 
@@ -76,7 +94,7 @@ namespace API.Controllers
 
             if (ModelState.IsValid)
             {
-                var existingPerson = await _personService.Get(new GetPersonServiceDto {Email = dto.Email});
+                var existingPerson = await _personService.Get(new GetPersonServiceDto { Email = dto.Email });
                 if (existingPerson.Value != null && existingPerson.Value.Id != dto.Id)
                 {
                     return Conflict("Email already exists.");

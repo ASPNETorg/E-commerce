@@ -20,8 +20,8 @@ This is a basic e-commerce project built with **ASP.NET Core** and **C#**, follo
 ### Installation
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/simple-ecommerce.git
-   cd simple-ecommerce
+   git clone https://github.com/TinaKorsandi/E-commerce.git
+   cd e-commerce
    ```
 
 2. **Restore dependencies**:

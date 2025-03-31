@@ -92,13 +92,26 @@ namespace API.Controllers
         {
             Guard_PersonService();
 
+            var putDto = new GetPersonServiceDto() { Email = dto.Email };
+
+            #region [- For checking & avoiding email duplication -]
+            //var getResponse = await _personService.Get(putDto);//For checking & avoiding email duplication
+            //switch (ModelState.IsValid)
+            //{
+            //    case true when getResponse.Value is null:
+            //    {
+            //        var putResponse = await _personService.Put(dto);
+            //        return putResponse.IsSuccessful ? Ok() : BadRequest();
+            //    }
+            //    case true when getResponse.Value is not null://For checking & avoiding email duplication
+            //        return Conflict(dto);
+            //    default:
+            //        return BadRequest();
+            //} 
+            #endregion
+
             if (ModelState.IsValid)
             {
-                var existingPerson = await _personService.Get(new GetPersonServiceDto { Email = dto.Email });
-                if (existingPerson.Value != null && existingPerson.Value.Id != dto.Id)
-                {
-                    return Conflict("Email already exists.");
-                }
                 var putResponse = await _personService.Put(dto);
                 return putResponse.IsSuccessful ? Ok() : BadRequest();
             }

@@ -87,7 +87,7 @@ namespace E_commerce.Infrastructure.Repositories
         public async Task<Person> SelectByEmailAsync(string email)
         {
             return await _dbContext.People.FirstOrDefaultAsync(p => p.Email == email);
-        } 
+        }
         #endregion
 
         #region [- Update() -]
@@ -100,6 +100,7 @@ namespace E_commerce.Infrastructure.Repositories
                     return new Response<Person>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
                 }
                 _dbContext.Update(model);
+                //_dbContext.Entry(model).State = EntityState.Modified;
                 await _dbContext.SaveChangesAsync();
                 var response = new Response<Person>(true, HttpStatusCode.OK, ResponseMessages.SuccessfullOperation, model);
                 return response;
@@ -110,6 +111,59 @@ namespace E_commerce.Infrastructure.Repositories
             }
         }
         #endregion
+        //#region [- Update() -]
+        //public async Task<IResponse<Person>> UpdateAsync(Person model)
+        //{
+        //    if (model is null)
+        //    {
+        //        return new Response<Person>(false, HttpStatusCode.UnprocessableContent, ResponseMessages.NullInput, null);
+        //    }
+
+        //    try
+        //    {
+        //        // Attach the entity to the context
+        //        _dbContext.Entry(model).State = EntityState.Modified;
+
+        //        // Attempt to save changes
+        //        await _dbContext.SaveChangesAsync();
+
+        //        // Return success response
+        //        return new Response<Person>(true, HttpStatusCode.OK, ResponseMessages.SuccessfullOperation, model);
+        //    }
+        //    catch (DbUpdateConcurrencyException ex)
+        //    {
+        //        // Handle concurrency exception
+        //        foreach (var entry in ex.Entries)
+        //        {
+        //            if (entry.Entity is Person)
+        //            {
+        //                var proposedValues = entry.CurrentValues;
+        //                var databaseValues = await entry.GetDatabaseValuesAsync();
+
+        //                // Optionally, you can log the values for debugging
+        //                // Log the proposed and database values if needed
+
+        //                // Decide how to handle the conflict
+        //                // For example, you can keep the database values or merge them
+        //                // Here, we will just return a conflict response
+        //                return new Response<Person>(false, HttpStatusCode.Conflict, ResponseMessages.Error, null);
+        //            }
+        //            else
+        //            {
+        //                throw new NotSupportedException(
+        //                    "Don't know how to handle concurrency conflicts for " + entry.Metadata.Name);
+        //            }
+        //        }
+        //        throw; // Rethrow if not handled
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Log the exception (optional)
+        //        // LogError(ex);
+        //        return new Response<Person>(false, HttpStatusCode.InternalServerError, ResponseMessages.Error, null);
+        //    }
+        //}
+        //#endregion
 
         #region [- Delete() -]
         public async Task<IResponse<Person>> DeleteAsync(Guid id)

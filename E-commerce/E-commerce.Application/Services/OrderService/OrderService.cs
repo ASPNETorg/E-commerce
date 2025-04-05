@@ -121,6 +121,7 @@ namespace E_commerce.Application.Services.OrderService
                 BuyerId = Guid.NewGuid(),
                 TotalAmount = dto.TotalAmount,
                 OrderDate = dto.OrderDate,
+                Status = dto.Status,
                 OrderDetails = dto.postOrderDetailServiceDtos.Select(od => new OrderDetail
                 {
                     Id = Guid.NewGuid(),
@@ -158,6 +159,7 @@ namespace E_commerce.Application.Services.OrderService
            
             existingOrder.BuyerId = dto.BuyerId;
             existingOrder.TotalAmount = dto.TotalAmount; 
+            existingOrder.Status = dto.Status;
                                                          
             if (dto.postOrderDetailServiceDtos != null && dto.postOrderDetailServiceDtos.Any())
             {

@@ -9,7 +9,7 @@ This is a basic e-commerce project built with **ASP.NET Core** and **C#**, follo
 
 ## Technologies Used
 - **Backend**: ASP.NET Core, C#
-- **Database**: Your preferred database (e.g., SQL Server)
+- **Database**: SQL Server
 - **Architecture**: Onion Architecture
 
 ## Getting Started
